@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calendar.css">
+
+
+    <title>Calendar</title>
+</head>
+
+<body>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="pink" ></div>
+    <div id="green" ></div>
+    <div id="main">
+    
+    <div id="month-year">
+        <span>
+            <span><button class="btn" id="minus"> < Prev </button></span>
+                    <span class="s1" id="month"></span>
+                    <span class="s1" id="year"></span>
+            <span><button class="btn" id="plus"> Next > </button></span>
+         </span>
+    </div>
+
+    <div id="root"></div>
+
+    <div id="inputs">
+        <input id="inp1" type="number" placeholder="Type Year">
+        <input id="inp2" type="number" placeholder="Type Month">
+        <button id="show">Show Date</button>
+    </div>
+</div>
+<div id="clear">
+    <button id="btn1">Get Current Date / Remove from LocalStorage</button>
+</div>
+
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector("#main"), {
+		max: 10,
+		speed: 400,
+        glare:true,
+        "max-glare":0.2,
+	});
+</script>
+<script src="calendar.js"></script>
+</body>
+
+</html>
